@@ -4,10 +4,13 @@ Used Java - Spring Boot
 API Endpoints:
 
 Get all driver profiles
-[Get]localhost:8080/api/driver-profile
+[Get] localhost:8080/api/driver-profile
+
 
 Register new driver
-[Post]localhost:8080/api/driver-profile/
+[Post] localhost:8080/api/driver-profile/
+
+
 Sample data:
 {
     "name": "Driver",
@@ -18,6 +21,7 @@ Sample data:
     "baseFareDistance": 150
 }
 
+
 Update driver
 [Put] localhost:8080/api/driver-profile/<driver ID>
 
@@ -27,9 +31,10 @@ Delete driver profile
 
 
 View calculated fares by driver ID
-[Get]localhost:8080/api/fare/view-fares/<driver ID>
+[Get] localhost:8080/api/fare/view-fares/<driver ID>
+
 
 Calculate fares by driver ID
-[Get]localhost:8080/api/fare/calculate-fare/<driver ID>
+[Get] localhost:8080/api/fare/calculate-fare/<driver ID>
 
 
