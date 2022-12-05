@@ -23,18 +23,18 @@ Sample data:
 
 
 Update driver
-[Put] localhost:8080/api/driver-profile/<driver ID>
+[Put] localhost:8080/api/driver-profile/{driver ID}
 
 
 Delete driver profile
-[Delete] localhost:8080/api/driver-profile/<driver ID>
+[Delete] localhost:8080/api/driver-profile/{driver ID}
 
 
 View calculated fares by driver ID
-[Get] localhost:8080/api/fare/view-fares/<driver ID>
+[Get] localhost:8080/api/fare/view-fares/{driver ID}
 
 
 Calculate fares by driver ID
-[Get] localhost:8080/api/fare/calculate-fare/<driver ID>
+[Get] localhost:8080/api/fare/calculate-fare/{driver ID}
 
 
