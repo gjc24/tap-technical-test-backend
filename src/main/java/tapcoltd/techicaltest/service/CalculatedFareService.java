@@ -13,6 +13,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 @Service
@@ -69,6 +70,8 @@ public class CalculatedFareService {
                 calculatedFareList.add(calculatedFare);
             }
 
+            //Place cheapest fare on first record
+            calculatedFareList.sort(Comparator.comparing(CalculatedFare::getFinalCalculatedCost));
         }
         catch (IOException e)
         {
